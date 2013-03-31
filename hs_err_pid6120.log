@@ -1,0 +1,112 @@
+#
+# A fatal error has been detected by the Java Runtime Environment:
+#
+#  Internal Error (classFileParser.cpp:3174), pid=6120, tid=5508
+#  Error: ShouldNotReachHere()
+#
+# JRE version: 6.0_20-b02
+# Java VM: Java HotSpot(TM) Client VM (16.3-b01 mixed mode windows-x86 )
+# If you would like to submit a bug report, please visit:
+#   http://java.sun.com/webapps/bugreport/crash.jsp
+#
+
+---------------  T H R E A D  ---------------
+
+Current thread (0x024de800):  JavaThread "Unknown thread" [_thread_in_vm, id=5508, stack(0x00270000,0x002c0000)]
+
+Stack: [0x00270000,0x002c0000],  sp=0x002bf880,  free space=13e002bf890k
+Native frames: (J=compiled Java code, j=interpreted, Vv=VM code, C=native code)
+V  [jvm.dll+0x1f4180]
+V  [jvm.dll+0xa1e29]
+V  [jvm.dll+0x74a41]
+V  [jvm.dll+0x760e4]
+V  [jvm.dll+0x1c26a5]
+V  [jvm.dll+0x1c2ddd]
+V  [jvm.dll+0x1c3195]
+V  [jvm.dll+0x1c31db]
+V  [jvm.dll+0x1c3302]
+V  [jvm.dll+0x1c337a]
+V  [jvm.dll+0x1c382d]
+V  [jvm.dll+0x1c3c32]
+V  [jvm.dll+0x1e40b3]
+V  [jvm.dll+0x1e448c]
+V  [jvm.dll+0xd89c1]
+V  [jvm.dll+0x1ddcd8]
+V  [jvm.dll+0x102e10]
+C  [javaw.exe+0x1657]
+C  [javaw.exe+0x1e2c]
+C  [javaw.exe+0x8614]
+C  [KERNEL32.dll+0x13677]
+C  [ntdll.dll+0x39f42]
+C  [ntdll.dll+0x39f15]
+
+
+---------------  P R O C E S S  ---------------
+
+Java Threads: ( => current thread )
+
+Other Threads:
+
+=>0x024de800 (exited) JavaThread "Unknown thread" [_thread_in_vm, id=5508, stack(0x00270000,0x002c0000)]
+
+VM state:not at safepoint (not fully initialized)
+
+VM Mutex/Monitor currently owned by a thread: None
+
+Dynamic libraries:
+0x00400000 - 0x00424000 	C:\Program Files (x86)\Java\jre6\bin\javaw.exe
+0x77310000 - 0x77490000 	C:\Windows\SysWOW64\ntdll.dll
+0x720c0000 - 0x720fc000 	C:\Program Files\Alwil Software\Avast5\snxhk.dll
+0x76640000 - 0x76750000 	C:\Windows\syswow64\KERNEL32.dll
+0x76e30000 - 0x76e77000 	C:\Windows\syswow64\KERNELBASE.dll
+0x76160000 - 0x76200000 	C:\Windows\syswow64\ADVAPI32.dll
+0x76260000 - 0x7630c000 	C:\Windows\syswow64\msvcrt.dll
+0x76620000 - 0x76639000 	C:\Windows\SysWOW64\sechost.dll
+0x75e20000 - 0x75f10000 	C:\Windows\syswow64\RPCRT4.dll
+0x74e70000 - 0x74ed0000 	C:\Windows\syswow64\SspiCli.dll
+0x74e60000 - 0x74e6c000 	C:\Windows\syswow64\CRYPTBASE.dll
+0x76ab0000 - 0x76bb0000 	C:\Windows\syswow64\USER32.dll
+0x75fa0000 - 0x76030000 	C:\Windows\syswow64\GDI32.dll
+0x76030000 - 0x7603a000 	C:\Windows\syswow64\LPK.dll
+0x74ff0000 - 0x7508e000 	C:\Windows\syswow64\USP10.dll
+0x76200000 - 0x76260000 	C:\Windows\system32\IMM32.DLL
+0x74ed0000 - 0x74f9c000 	C:\Windows\syswow64\MSCTF.dll
+0x7c340000 - 0x7c396000 	C:\Program Files (x86)\Java\jre6\bin\msvcr71.dll
+0x6d800000 - 0x6da97000 	C:\Program Files (x86)\Java\jre6\bin\client\jvm.dll
+0x73270000 - 0x732a2000 	C:\Windows\system32\WINMM.dll
+0x729f0000 - 0x72a3b000 	C:\Windows\system32\apphelp.dll
+0x6d7b0000 - 0x6d7bc000 	C:\Program Files (x86)\Java\jre6\bin\verify.dll
+0x6d330000 - 0x6d34f000 	C:\Program Files (x86)\Java\jre6\bin\java.dll
+0x6d290000 - 0x6d298000 	C:\Program Files (x86)\Java\jre6\bin\hpi.dll
+0x76c30000 - 0x76c35000 	C:\Windows\syswow64\PSAPI.DLL
+0x6d380000 - 0x6d3a9000 	C:\Program Files (x86)\Java\jre6\bin\jdwp.dll
+0x6d6a0000 - 0x6d6a6000 	C:\Program Files (x86)\Java\jre6\bin\npt.dll
+0x6d7f0000 - 0x6d7ff000 	C:\Program Files (x86)\Java\jre6\bin\zip.dll
+
+VM Arguments:
+jvm_args: -agentlib:jdwp=transport=dt_socket,suspend=y,address=localhost:56171 -Dfile.encoding=Cp1252 -Xbootclasspath:C:\Users\hitesh\AppData\Local\Android\android-sdk\platforms\android-10\android.jar 
+java_command: edu.gatech.cic.weathercube.Test
+Launcher Type: SUN_STANDARD
+
+Environment Variables:
+JAVA_HOME=C:\Program Files\Java\jdk1.6.0_35
+PATH=C:/Program Files (x86)/Java/jre6/bin/client;C:/Program Files (x86)/Java/jre6/bin;C:/Program Files (x86)/Java/jre6/lib/i386;C:\Program Files (x86)\Common Files\Intel\Shared Files\cpp\bin\Intel64;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files\WIDCOMM\Bluetooth Software\;C:\Program Files\WIDCOMM\Bluetooth Software\syswow64;C:\Program Files\Intel\WiFi\bin\;C:\Program Files\Common Files\Intel\WirelessCommon\;C:\Program Files (x86)\Sony\VAIO Startup Setting Tool;C:\Program Files (x86)\Internet Explorer;C:\Program Files\TortoiseSVN\bin;C:\Program Files\SlikSvn\bin;C:\Program Files (x86)\MATLAB\MATLAB Compiler Runtime\v716\runtime\win32;C:\Users\hitesh\AppData\Local\Smartbar\Application\;C:\Program Files\Java\jdk1.6.0_35\bin;C:\Users\hitesh\AppData\Local\Smartbar\Application\;C:\Program Files\Java\jdk1.6.0_35\bin;C:\Users\hitesh\Downloads\eclipse-java-helios-SR2-win32\eclipse;
+USERNAME=hitesh
+OS=Windows_NT
+PROCESSOR_IDENTIFIER=Intel64 Family 6 Model 37 Stepping 5, GenuineIntel
+
+
+
+---------------  S Y S T E M  ---------------
+
+OS: Windows 7 Build 7600 
+
+CPU:total 4 (8 cores per cpu, 2 threads per core) family 6 model 37 stepping 5, cmov, cx8, fxsr, mmx, sse, sse2, sse3, ssse3, sse4.1, sse4.2, popcnt, ht
+
+Memory: 4k page, physical 3848292k(395652k free), swap 7842132k(593936k free)
+
+vm_info: Java HotSpot(TM) Client VM (16.3-b01) for windows-x86 JRE (1.6.0_20-b02), built on Apr 12 2010 13:52:23 by "java_re" with MS VC++ 7.1 (VS2003)
+
+time: Sat Mar 30 13:13:39 2013
+elapsed time: 0 seconds
+
